@@ -6,6 +6,6 @@ services:
 before_install:
  - docker login --username=$U --password=$P --email=$E
  
-install: 
+script: 
  - docker build -t tyurikov/centos-java8 . 
  - docker push tyurikov/centos-java8
